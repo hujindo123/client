@@ -1,0 +1,57 @@
+border-1px($color)
+  position relative
+  &:after
+    display block
+    position absolute
+    left 0
+    bottom 0
+    width 100%
+    border-top 1px solid $color
+    content ''
+border-none()
+  &:after
+    display none
+bg-image($url)
+  background-image url($url + "@2x.png")
+  @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3)
+    background-image url($url + "@3x.png")
+
+font-color()
+  color #f63
+
+border-bottom-left()
+  background-image url(../../../static/image/repeat-x.png), url(../../../static/image/repeat-x.png)
+  background-repeat repeat-x, repeat-y
+  background-position 0 bottom, right top
+  background-size auto 1px, auto 1px
+
+border-bottom-1px()
+  background-image: url(../../../static/image/repeat-x.png)
+  background-repeat: repeat-x
+  background-position: bottom left
+  background-size: auto 1px
+border()
+  background-image: url(../../../static/image/repeat-x.png),url(../../../static/image/repeat-x.png),url(../../../static/image/repeat-x.png),url(../../../static/image/repeat-x.png)
+  background-repeat: repeat-x, repeat-y, repeat-x, repeat-y
+  background-position: left top, left top, right bottom, right top
+  background-size: auto 1px,auto 1px,auto 1px,auto 1px
+border-top-1px()
+  background-image: url(../../../static/image/repeat-x.png)
+  background-repeat: repeat-x
+  background-position: top left
+  background-size: auto 1px
+border-left-1px()
+  background-image: url(../../../static/image/repeat-x.png)
+  background-repeat: repeat-y
+  background-position: top left
+  background-size: auto 1px
+border-del-bottom-1px()
+  background-image: url(../../../static/image/repeat-x.png),url(../../../static/image/repeat-x.png),url(../../../static/image/repeat-x.png),url(../../../static/image/repeat-x.png)
+  background-repeat: repeat-x, repeat-y,  repeat-y
+  background-position: left top, left top, right top
+  background-size: auto 1px,auto 1px,auto 1px
+border-bottom-top()
+  background-image url(../../../static/image/repeat-x.png), url(../../../static/image/repeat-x.png)
+  background-repeat repeat-x, repeat-x
+  background-position 0 top, 0 bottom
+  background-size auto 1px, auto 1px
